@@ -1,6 +1,10 @@
+win_local.bat
+trial.py
+
 /venv
 .env
 *.py[cod]
 /fast-api/__pycache__
 
 **/__pycache__/ 
+/config/database.py
