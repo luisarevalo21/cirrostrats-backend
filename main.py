@@ -4,12 +4,13 @@ from pydantic import BaseModel
 import pickle
 import routes.route as route
 
-app = FastAPI()
+app = FastAPI(root_path="/api")
 
 app.include_router(route.router)
 
 origins = [
     "http://localhost:5173"
+    "http://127.0.0.1:8000"
 ]
 
 
